@@ -1,0 +1,44 @@
+html {
+    background-color: #010102;
+}
+
+p, h1, h2, a {
+    color: white;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+    display: flex;
+}
+
+.nav {
+    display: flex;
+}
+
+.top-sign {
+    width: 170px;
+
+}
+
+.avicii_quote {
+    font-size: 38px;
+}
+
+.avicii_stature {
+    /*width: 600px;*/
+    /*float: right;*/
+
+    width: 66vw;
+    position: fixed;
+    transform: translate(-12%, -50%);
+}
