@@ -2,7 +2,7 @@ html {
     background-color: #010102;
 }
 
-p, h1, h2, a {
+p, h1, h2, a, figure {
     color: white;
     font-family: 'Libre Franklin', sans-serif;
 }
@@ -17,12 +17,33 @@ ul {
     padding: 0;
 }
 
+.wrapper {
+    padding: 45px 65px;
+}
+
+.first {
+    height: 90vh;
+}
+
 .top {
     display: flex;
+    align-items: center;
 }
 
 .nav {
     display: flex;
+    gap: 20px;
+    font-size: 1.4em;
+    position: absolute;
+    right: 5%;
+}
+
+.nav li a {
+    padding: 10px;
+}
+
+.nav li a:hover {
+    background-color: #444444;
 }
 
 .top-sign {
@@ -31,14 +52,44 @@ ul {
 }
 
 .avicii_quote {
-    font-size: 38px;
+    position: absolute;
+    top: 30vh;
+    left: 7vw;
+    font-size: 6vh;
+    margin: 0;
+}
+
+.avicii_quote blockquote {
+    margin: 0;
+}
+
+.avicii_quote figcaption {
+    padding-top: 35px;
 }
 
 .avicii_stature {
-    /*width: 600px;*/
-    /*float: right;*/
+    width: 62vw;
+    max-width: calc(100vh - 300px);
+    position: absolute;
+    right: 4vw;
+    bottom: 2vh;
+    z-index: -1;
+}
 
-    width: 66vw;
-    position: fixed;
-    transform: translate(-12%, -50%);
+.rip_banner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 3vh;
+    text-align: center;
+    /*font-size: calc(4vh - 20%);*/
+}
+
+.rip_banner p:first-child {
+    font-size: 4.5vh;
+    margin: 0;
+}
+
+.rip_banner p:last-child {
+    font-size: 2.3vh;
 }
