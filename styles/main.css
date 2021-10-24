@@ -2,6 +2,10 @@ html {
     background-color: #010102;
 }
 
+body {
+    margin: 0;
+}
+
 p, h1, h2, a, figure {
     color: white;
     font-family: 'Libre Franklin', sans-serif;
@@ -19,23 +23,26 @@ ul {
 
 .wrapper {
     padding: 45px 65px;
+    max-width: 1200px;
+    width: 80vw;
+    margin: auto;
+    /*todo min width*/
 }
 
 .first {
     height: 90vh;
 }
 
-.top {
+.top_nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .nav {
     display: flex;
-    gap: 20px;
+    gap: 0.8vw;
     font-size: 1.4em;
-    position: absolute;
-    right: 5%;
 }
 
 .nav li a {
@@ -46,17 +53,19 @@ ul {
     background-color: #444444;
 }
 
-.top-sign {
-    width: 170px;
+.top_block {
+    display: flex;
+    justify-content: space-between;
+}
 
+.top_sign {
+    width: 170px;
 }
 
 .avicii_quote {
-    position: absolute;
-    top: 30vh;
-    left: 7vw;
     font-size: 6vh;
-    margin: 0;
+    padding-top: 13vh;
+    margin-right: -35vw;
 }
 
 .avicii_quote blockquote {
@@ -64,15 +73,16 @@ ul {
 }
 
 .avicii_quote figcaption {
-    padding-top: 35px;
+    padding-top: 30px;
+    font-size: 4.4vh;
 }
 
 .avicii_stature {
     width: 62vw;
     max-width: calc(100vh - 300px);
-    position: absolute;
+    /*position: absolute;
     right: 4vw;
-    bottom: 2vh;
+    bottom: 2vh;*/
     z-index: -1;
 }
 
