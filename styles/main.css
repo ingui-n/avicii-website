@@ -3,9 +3,7 @@ html {
 }
 
 body {
-    margin: auto;
-    max-width: 1200px;
-    width: 85%;
+    margin: 0;
 }
 
 p, h1, h2, a, figure {
@@ -23,10 +21,29 @@ ul {
     padding: 0;
 }
 
+.top, .first-view, .second-view, footer .footer {
+    margin: auto;
+    max-width: 1200px;
+    width: 85%;
+    left: 0;
+    right: 0;
+}
+
 .top {
     display: flex;
     justify-content: space-between;
-    padding: 50px 20px 20px;
+    padding: 50px 20px 30px;
+    position: fixed;
+}
+
+.top__background::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 150px;
+    top: -3%;
+    background: black url(../assets/waves/wave3.png) no-repeat;
+    background-size: 100% 100%;
 }
 
 .nav {
@@ -38,7 +55,6 @@ ul {
 
 .nav a {
     padding: 10px;
-    background-color: #262222;
 }
 
 .nav a:hover {
@@ -46,29 +62,29 @@ ul {
     color: #010102;
 }
 
-.top-sign {
+.top__sign {
     width: 170px;
 
 }
 
-.avicii_quote {
+.avicii__quote {
     font-size: 62px;
     margin-left: 0;
     margin-right: 0;
     margin-top: revert;
 }
 
-.avicii_quote blockquote, .avicii_quote blockquote p {
+.avicii__quote blockquote, .avicii__quote blockquote p {
     padding: 0;
     margin: 0;
 }
 
-.avicii_quote figcaption {
+.avicii__quote figcaption {
     font-size: 45px;
     margin-top: 25px;
 }
 
-.rip-sign {
+.rip__sign {
     text-align: center;
     font-size: 28px;
     text-transform: uppercase;
@@ -125,3 +141,28 @@ ul {
     flex-direction: row-reverse;
 }
 
+footer {
+    background: #464648 url(../assets/waves/wave0.png) no-repeat;
+    background-size: 100% 100%;
+    padding-top: 105px;
+}
+
+.footer__main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__about {
+    max-width: 60%;
+}
+
+.footer__second {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 13px;
+}
+
+.footer__second img {
+    width: 30px;
+}
