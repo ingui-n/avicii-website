@@ -1,0 +1,63 @@
+.first-view {
+    padding-top: 140px;
+    margin: auto;
+    max-width: 1200px;
+    width: 85%;
+    left: 0;
+    right: 0;
+    font-size: 1.1em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.6em;
+    padding-bottom: 35px;
+}
+
+.first-view {
+    text-align: justify;
+    line-height: 27px;
+}
+
+.first-view h2 {
+    font-size: 1.9em;
+}
+
+.first-view li {
+    padding-bottom: 8px;
+}
+
+.quick-facts {
+    float: right;
+    width: 293px;
+    padding-left: 5%;
+    padding-bottom: 25px;
+    margin-top: -28px;
+}
+
+.quick-facts ul {
+    border: solid #464648 5px;
+    padding: 18px;
+    line-height: 30px;
+}
+
+.quick-facts li {
+    color: darkgray;
+}
+
+.mark__white {
+    color: white;
+}
+
+.avicii__stage {
+    width: 100%;
+    padding-top: 30px;
+}
+
+.avicii__hi {
+    float: right;
+    width: 30%;
+    padding-top: 90px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}

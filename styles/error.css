@@ -1,0 +1,17 @@
+.first-view {
+    margin: auto;
+    max-width: 1200px;
+    width: 85%;
+    left: 0;
+    right: 0;
+    padding-top: 22vh;
+    font-size: 3vh;
+}
+
+.first-view h2 {
+    font-size: 4.5vh;
+}
+
+footer {
+    position: absolute;
+}

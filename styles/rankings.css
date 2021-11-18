@@ -1,0 +1,64 @@
+.first-view {
+    padding-top: 140px;
+    margin: auto;
+    max-width: 900px;
+    width: 65%;
+    left: 0;
+    right: 0;
+    font-size: 1.1em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.6em;
+    padding-bottom: 35px;
+}
+
+.track {
+    display: flex;
+    align-items: center;
+    background-color: #464648;
+    height: 110px;
+}
+
+.track__number {
+    font-size: 3em;
+    width: 80px;
+    padding-left: 20px;
+}
+
+.track__poster {
+    width: 110px;
+}
+
+.track__name {
+    font-size: 2.1em;
+    padding-left: 30px;
+    max-width: 50%;
+    width: 43vw;
+}
+
+.track__play-link:first-child {
+    padding-right: 6px;
+}
+
+.track__play {
+    width: 40px;
+}
+
+.track__up-button {
+    padding: 20px;
+    margin-left: 16px;
+    margin-right: 16px;
+    width: 135px;
+    color: black;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.track__buttons {
+    float: right;
+    display: contents;
+}
+
+

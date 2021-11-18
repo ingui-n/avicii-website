@@ -1,27 +1,4 @@
-html {
-    background-color: #010102;
-}
-
-body {
-    margin: 0;
-}
-
-p, h1, h2, a, figure {
-    color: white;
-    font-family: 'Libre Franklin', sans-serif;
-}
-
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.top, .first-view, .second-view, footer .footer {
+.first-view, .second-view {
     margin: auto;
     max-width: 1200px;
     width: 85%;
@@ -29,46 +6,8 @@ ul {
     right: 0;
 }
 
-.top {
-    display: flex;
-    justify-content: space-between;
-    padding: 50px 20px 30px;
-    position: fixed;
-}
-
-.top__background::before {
-    content: "";
-    position: fixed;
-    width: 100%;
-    height: 150px;
-    top: -3%;
-    background: black url(../assets/waves/wave3.png) no-repeat;
-    background-size: 100% 100%;
-}
-
-.nav {
-    display: flex;
-    gap: 25px;
-    align-items: center;
-    font-size: 20px;
-}
-
-.nav a {
-    padding: 10px;
-}
-
-.nav a:hover {
-    background-color: #b0a6a6;
-    color: #010102;
-}
-
-.top__sign {
-    width: 170px;
-
-}
-
 .avicii__quote {
-    font-size: 62px;
+    font-size: 6vh;
     margin-left: 0;
     margin-right: 0;
     margin-top: revert;
@@ -80,13 +19,13 @@ ul {
 }
 
 .avicii__quote figcaption {
-    font-size: 45px;
+    font-size: 5vh;
     margin-top: 25px;
 }
 
 .rip__sign {
     text-align: center;
-    font-size: 28px;
+    font-size: 3vh;
     text-transform: uppercase;
     padding: 0;
     letter-spacing: 4px;
@@ -97,17 +36,10 @@ ul {
     background-position-x: right;
     background-position-y: bottom;
     background-size: contain;
-    /*padding-top: 158px;*/
-
     position: absolute;
-    bottom: 20px;
+    bottom: 125px;
     z-index: -1;
-    max-width: 1200px;
-    width: 85%;
-}
-
-.second-view {
-    padding-top: 100vh;
+    max-height: 65%;
 }
 
 .artists__wrapper {
@@ -121,6 +53,21 @@ ul {
     font-size: 37px;
     text-align: center;
     padding-bottom: 40px;
+}
+
+.artists__underline {
+    padding-top: 105vh;
+    padding-bottom: 25px;
+}
+
+.artists__underline::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 135px;
+    background: #707070 url(../assets/waves/wave9.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: -1;
 }
 
 .artist__wrapper {
@@ -137,32 +84,10 @@ ul {
     max-width: 85%;
 }
 
+.artist__wrapper:nth-child(odd) figcaption {
+    text-align: right;
+}
+
 .artist__wrapper:nth-child(even) {
     flex-direction: row-reverse;
-}
-
-footer {
-    background: #464648 url(../assets/waves/wave0.png) no-repeat;
-    background-size: 100% 100%;
-    padding-top: 105px;
-}
-
-.footer__main {
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer__about {
-    max-width: 60%;
-}
-
-.footer__second {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 13px;
-}
-
-.footer__second img {
-    width: 30px;
 }
