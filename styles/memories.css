@@ -1,0 +1,100 @@
+.first-view {
+    padding-top: 140px;
+    margin: auto;
+    max-width: 1200px;
+    width: 85%;
+    left: 0;
+    right: 0;
+    font-size: 1.1em;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.memories {
+    column-count: 3;
+}
+
+.memory {
+    text-align: center;
+    max-width: 360px;
+    height: min-content;
+    padding: 25px;
+    page-break-inside: avoid;
+}
+
+.memory__from {
+    color: #b1b1b1;
+    text-transform: lowercase;
+    font-style: italic;
+    padding-right: 7px;
+}
+
+.memory__author {
+    text-transform: uppercase;
+}
+
+.memory__date {
+    font-size: 0.8em;
+}
+
+.share {
+    width: 455px;
+    height: 285px;
+    background-color: #343434;
+    padding: 10px;
+    border-radius: 3px;
+    margin: auto auto 20px;
+}
+
+#name {
+    font-size: 1em;
+    height: 1.5em;
+    width: 11em;
+    margin: 8px;
+    border-radius: 3px;
+    border: none;
+    padding: 5px;
+    background-color: #707070;
+    color: white;
+}
+
+#message {
+    font-size: 1em;
+    width: 22em;
+    margin-left: 24px;
+    border-radius: 3px;
+    border: none;
+    resize: none;
+    padding: 5px;
+    background-color: #707070;
+    color: white;
+}
+
+.label__message {
+    vertical-align: top;
+}
+
+.share__submit  {
+    padding: 10px;
+    width: 135px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    background: #ffffff00 url(../assets/shapes/track-button.png) no-repeat;
+    background-size: 100% 100%;
+    border: none;
+    margin: 10px auto 35px 104px;
+    display: block;
+}
+
+.share__submit:hover {
+    background: #ffffff00 url(../assets/shapes/track-button.svg) no-repeat;
+    background-size: 100% 100%;
+}

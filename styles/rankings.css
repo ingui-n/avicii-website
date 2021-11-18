@@ -1,3 +1,7 @@
+body {
+    counter-reset: track-number;
+}
+
 .first-view {
     padding-top: 140px;
     margin: auto;
@@ -17,14 +21,25 @@ h1 {
 .track {
     display: flex;
     align-items: center;
-    background-color: #464648;
     height: 110px;
+    padding: 0 95px;
+
+    background: #ffffff00 url(../assets/shapes/track-background.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.track:not(:last-child) {
+    margin-bottom: 20px;
 }
 
 .track__number {
-    font-size: 3em;
-    width: 80px;
-    padding-left: 20px;
+    font-size: 2.2em;
+    width: 145px;
+}
+
+.track__number::before {
+    counter-increment: track-number;
+    content: counter(track-number);
 }
 
 .track__poster {
@@ -32,10 +47,10 @@ h1 {
 }
 
 .track__name {
-    font-size: 2.1em;
-    padding-left: 30px;
+    font-size: 1.5em;
+    padding-left: 20px;
     max-width: 50%;
-    width: 43vw;
+    width: 50vw;
 }
 
 .track__play-link:first-child {
@@ -47,13 +62,21 @@ h1 {
 }
 
 .track__up-button {
-    padding: 20px;
-    margin-left: 16px;
-    margin-right: 16px;
-    width: 135px;
-    color: black;
+    padding: 20px 42px;
+    margin-left: 10px;
+    margin-right: -40px;
+    width: 22vw;
+    color: white;
     font-size: 1em;
     cursor: pointer;
+    background: #ffffff00 url(../assets/shapes/track-button.png) no-repeat;
+    background-size: 100% 100%;
+    border: none;
+}
+
+.track__up-button:hover {
+    background: #ffffff00 url(../assets/shapes/track-button-grey.png) no-repeat;
+    background-size: 100% 100%;
 }
 
 .track__buttons {
@@ -61,4 +84,19 @@ h1 {
     display: contents;
 }
 
+.track__load-more  {
+    padding: 20px 42px;
+    width: 22vw;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    background: #ffffff00 url(../assets/shapes/track-button-grey.png) no-repeat;
+    background-size: 100% 100%;
+    border: none;
+    margin: 35px auto;
+    display: block;
+}
 
+.track__load-more:hover {
+    filter: invert(0.2);
+}
