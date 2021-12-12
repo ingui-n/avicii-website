@@ -3,29 +3,23 @@ body {
 }
 
 .first-view {
-    padding-top: 140px;
     margin: auto;
     max-width: 900px;
-    width: 65%;
+    width: 80%;
     left: 0;
     right: 0;
     font-size: 1.1em;
 }
 
-h1 {
-    text-align: center;
-    font-size: 2.6em;
-    padding-bottom: 35px;
-}
-
 .track {
-    display: flex;
+    display: grid;
+    grid-template-columns: 80px 130px 1fr 50px 50px 225px;
+    align-content: center;
     align-items: center;
     height: 110px;
-    padding: 0 95px;
-
     background: #ffffff00 url(../assets/shapes/track-background.png) no-repeat;
     background-size: 100% 100%;
+    padding-left: 100px;
 }
 
 .track:not(:last-child) {
@@ -34,7 +28,6 @@ h1 {
 
 .track__number {
     font-size: 2.2em;
-    width: 145px;
 }
 
 .track__number::before {
@@ -48,9 +41,6 @@ h1 {
 
 .track__name {
     font-size: 1.5em;
-    padding-left: 20px;
-    max-width: 50%;
-    width: 50vw;
 }
 
 .track__play-link:first-child {
@@ -62,10 +52,8 @@ h1 {
 }
 
 .track__up-button {
-    padding: 20px 42px;
-    margin-left: 10px;
-    margin-right: -40px;
-    width: 22vw;
+    padding: 20px;
+    width: 180px;
     color: white;
     font-size: 1em;
     cursor: pointer;
@@ -80,13 +68,12 @@ h1 {
 }
 
 .track__buttons {
-    float: right;
     display: contents;
 }
 
-.track__load-more  {
-    padding: 20px 42px;
-    width: 22vw;
+.track__load-more {
+    padding: 20px;
+    width: 210px;
     color: white;
     font-size: 1em;
     cursor: pointer;
@@ -99,4 +86,63 @@ h1 {
 
 .track__load-more:hover {
     filter: invert(0.2);
+}
+
+@media only screen and (max-width: 1140px) {
+    .first-view {
+        width: 95vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .track__name {
+        font-size: 1.1em;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .track {
+        background-color: #464648;
+        border-radius: 3px;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 80px 125px 1fr 50px 50px 190px;
+    }
+
+    .track__number {
+        padding-left: 13px;
+        font-size: 1.7em;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .track__up-button {
+        background-color: #000000;
+        border-radius: 3px;
+        width: 110px;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .track {
+        grid-template-columns: 70px 1fr 50px 50px 125px;
+    }
+
+    .track__poster {
+        display: none;
+    }
+
+    .track__name {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .track__play-link {
+        display: none;
+    }
+
+    .track {
+        grid-template-columns: 70px 1fr 125px;
+    }
 }

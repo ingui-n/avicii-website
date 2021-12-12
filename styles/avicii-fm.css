@@ -8,11 +8,6 @@
     font-size: 1.1em;
 }
 
-.fm__header {
-    text-align: center;
-    font-size: 2em;
-}
-
 .fm__div {
     display: flex;
     gap: 20px;
@@ -20,9 +15,9 @@
 }
 
 .fm__iframe {
-    width: 100%;
+    width: 85vw;
     height: 175px;
-    max-width: 660px;
+    max-width: 800px;
     overflow: hidden;
     background: transparent;
     border: none;

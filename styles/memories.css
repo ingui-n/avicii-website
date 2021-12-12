@@ -1,5 +1,4 @@
 .first-view {
-    padding-top: 140px;
     margin: auto;
     max-width: 1200px;
     width: 85%;
@@ -8,11 +7,7 @@
     font-size: 1.1em;
 }
 
-h1 {
-    text-align: center;
-}
-
-h2 {
+.first-view h2 {
     text-align: center;
     padding-top: 15px;
 }
@@ -97,4 +92,56 @@ h2 {
 .share__submit:hover {
     background: #ffffff00 url(../assets/shapes/track-button.svg) no-repeat;
     background-size: 100% 100%;
+}
+
+@media only screen and (max-width: 930px) {
+    .memories {
+        column-count: 2;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .memories {
+        column-count: 1;
+    }
+
+    .memory {
+        max-width: max-content;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .label__name, .label__message {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #message, #name {
+        margin: 0;
+    }
+
+    .share {
+        width: fit-content;
+        height: 348px;
+        margin: auto;
+    }
+
+    .share__submit {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .first-view {
+        font-size: 1em;
+    }
+
+    #message {
+        width: 70vw;
+    }
 }

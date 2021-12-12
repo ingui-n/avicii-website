@@ -6,6 +6,11 @@
     right: 0;
 }
 
+.second-view {
+    max-width: 900px;
+    width: 95%;
+}
+
 .avicii__quote {
     font-size: 6vh;
     margin-left: 0;
@@ -32,7 +37,7 @@
 }
 
 .first-view {
-    background: url(../assets/images/avicii-stature2.png) no-repeat;
+    background: url(../assets/images/avicii-stature.png) no-repeat;
     background-position-x: right;
     background-position-y: bottom;
     background-size: contain;
@@ -40,6 +45,7 @@
     bottom: 125px;
     z-index: -1;
     max-height: 65%;
+    padding-top: 0;
 }
 
 .artists__wrapper {
@@ -65,7 +71,7 @@
     position: absolute;
     width: 100%;
     height: 135px;
-    background: #707070 url(../assets/waves/wave9.png) no-repeat;
+    background: #707070 url(../assets/waves/wave1.png) no-repeat;
     background-size: 100% 100%;
     z-index: -1;
 }
@@ -90,4 +96,114 @@
 
 .artist__wrapper:nth-child(even) {
     flex-direction: row-reverse;
+}
+
+.artist__image {
+    width: 150px;
+    height: fit-content;
+    border-radius: 3%;
+    align-self: center;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 920px) {
+    .avicii__quote {
+        font-size: 50px;
+        padding-bottom: 8vh;
+    }
+
+    .avicii__quote figcaption {
+        font-size: 38px;
+    }
+
+    .rip__sign {
+        font-size: 2vh;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .first-view {
+        background: none;
+    }
+
+    .avicii__quote {
+        text-align: center;
+    }
+
+    /*.nav {
+        font-size: 16px;
+    }
+
+    .top__sign {
+        width: 110px;
+    }*/
+}
+
+@media only screen and (max-width: 650px) {
+    .artists__header {
+        font-size: 28px;
+        padding-top: 20px;
+    }
+
+    .artist__wrapper {
+        max-width: 100%;
+    }
+
+    .artist__wrapper, .artist__wrapper:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+
+    .artist__wrapper figure {
+        align-self: center;
+        width: 95vw;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .avicii__quote {
+        font-size: 35px;
+    }
+
+    .avicii__quote figcaption {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-height: 820px) {
+    .avicii__quote {
+        margin-top: 0;
+    }
+
+    .avicii__quote figcaption {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-height: 750px) {
+    .avicii__quote {
+        padding-bottom: 0;
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-height: 630px) {
+    .avicii__quote {
+        padding-top: 18vh;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    .avicii__quote {
+        display: none;
+    }
+
+    .rip__sign {
+        font-size: 15px;
+        padding-top: 48vh;
+    }
 }

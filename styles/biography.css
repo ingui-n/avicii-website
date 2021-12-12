@@ -1,20 +1,10 @@
 .first-view {
-    padding-top: 140px;
     margin: auto;
     max-width: 1200px;
     width: 85%;
     left: 0;
     right: 0;
     font-size: 1.1em;
-}
-
-h1 {
-    text-align: center;
-    font-size: 2.6em;
-    padding-bottom: 35px;
-}
-
-.first-view {
     text-align: justify;
     line-height: 27px;
 }
@@ -29,7 +19,7 @@ h1 {
 
 .quick-facts {
     float: right;
-    width: 293px;
+    width: 300px;
     padding-left: 5%;
     padding-bottom: 25px;
     margin-top: -28px;
@@ -37,8 +27,8 @@ h1 {
 
 .quick-facts ul {
     border: solid #464648 5px;
-    padding: 18px;
     line-height: 30px;
+    padding: 18px 18px 9px;
 }
 
 .quick-facts li {
@@ -50,14 +40,40 @@ h1 {
 }
 
 .avicii__stage {
-    width: 100%;
+    width: 70%;
     padding-top: 30px;
+    margin: auto;
+    display: flex;
 }
 
 .avicii__hi {
     float: right;
-    width: 30%;
-    padding-top: 90px;
-    padding-left: 30px;
-    padding-bottom: 10px;
+    width: 400px;
+    padding: 80px 0 10px 20px;
+}
+
+@media only screen and (max-width: 790px) {
+    .first-view {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .quick-facts {
+        float: none;
+        padding-left: 0;
+        width: 85vw;
+    }
+
+    .quick-facts li {
+        margin: auto;
+    }
+
+    .first-view h2 {
+        font-size: 1.7em;
+    }
+
+    .avicii__hi {
+        width: 50%;
+    }
 }
